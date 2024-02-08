@@ -1,16 +1,4 @@
-// next.config.mjs
+/** @type {import('next').NextConfig} */
+const nextConfig = {};
 
-const { generateStaticParams } = require('next/dist/export/');
-
-module.exports = {
-  async exportPathMap(defaultPathMap, { dev, dir, outDir, distDir, buildId }) {
-    return generateStaticParams({
-      dir,
-      outDir,
-      distDir,
-      buildId,
-      defaultPathMap,
-      dev,
-    });
-  },
-};
+export default nextConfig;
